@@ -1,0 +1,32 @@
+def TimeConvert(num)
+
+  # code goes here
+  min = num/60
+  sec = num%60
+  ans = min.to_s+":"+sec.to_s
+  return ans
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+TimeConvert(STDIN.gets)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

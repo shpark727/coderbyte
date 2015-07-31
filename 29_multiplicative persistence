@@ -1,14 +1,14 @@
 def MultiplicativePersistence(num)
 
-  # code goes here
-  count = 0	# 출력 : 계산 수
-  tens = 0  # 10의 자리 수 
-  ones = 0	# 1의 자리 수
-  while num/10 >0 do # 조건 : n이 10이상일 때
-    tens = num/10	# 십의 자리수 
-    ones = num%10	# 일의 자리수 
-    num = tens * ones # num은 십의자리수 * 일의자리수
-    count +=1			# 계산수 +1 
+  # code goes here      # 코드보면 이해가실걸요? ㅎ 
+  count = 0	          # 출력 : 계산 수만큼 +1 함.
+  tens = 0            # 10의 자리 수 
+  ones = 0	          # 1의 자리 수
+  while num/10 >0 do  # 조건 : n이 10이상일 때
+    tens = num/10	        # 십의 자리수  (num을 10으로 나눈 몫이 바로 십의 자리수!)
+    ones = num%10	        # 일의 자리수   (num을 10으로 나눈 나머지가 바로 1의 자리수!)
+    num = tens * ones       # num은 십의자리수 * 일의자리수 (두개를 곱하면 다음번 num값! )
+    count +=1			            # 계산수 +1 
   end
     
     

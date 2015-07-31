@@ -1,17 +1,17 @@
 def PowersofTwo(num)
 
-  # code goes here
-  flag = true               #출력 변수 
-  
+  # code goes here          #코드가 복잡한데 분명 나보다 더 깔끔하게 만든사람이 있을것임,, ㅠ
+  flag = true               # 제가 쓴 방법은 2가 나올때까지 입력받은 num을 2로 계속계속계속 나누는 겁니다. 
+                            # 나누다가 홀수가 나오면 아웃! 
   while num >1 do         #루프 조건 
-    if num%2 ==1        # 홀수일때 => false
+    if num%2 ==1        # 홀수일때 => false ( 홀수는 2의 제곱수가 당연아니므로 )
       flag = false
       return flag
-    elsif 1 == num/2        # num이 2일때 => true
+    elsif 1 == num/2        # num이 2일때 => true ( 2는 2의 첫번째 제곱수이므로 )
       flag = true
       return flag
     else
-      num = num/2         # 짝수일때 => num을 2로 나눔 !!
+      num = num/2         # 짝수일때 => num을 2로 나눔 !! ( num을 2가 나올때까지 계속계속 2로 나눔 )
     end
   end
   

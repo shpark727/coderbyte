@@ -1,7 +1,7 @@
 def Palindrome(str)
 
   # code goes here
-  return str.reverse == str
+  return str.reverse == str   # iamdoo2 님의 강의로 쉽게쉽게 
          
 end
    

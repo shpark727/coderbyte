@@ -1,0 +1,46 @@
+def OffLineMinimum(strArr)
+
+  # code goes here
+  
+  # domain variable : 현재까지의 범위
+  # ans variable : 출력변수
+  
+  domain =[]
+  ans=[]
+  
+  0.upto(strArr.length-1) do |x|
+    if strArr[x] =="E"        #array 값이 "E"인 경우
+      ans.push(domain.min)    #domain범위 내에서 최소값을 ans변수에 추가함
+      minindex = domain.each_with_index.min[1] #추가한 최소값의 인덱스
+      domain.delete_at(minindex)                #인덱스를 이용해서 domain범위 안에 이미 이용한 최소값은 삭제시킴 
+    else
+      domain.push(strArr[x])      #"E"가 아닐경우 array값을 domain변수에 넣음
+    end
+  end
+      
+  return ans
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+OffLineMinimum(STDIN.gets)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

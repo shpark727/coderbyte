@@ -3,9 +3,9 @@ def ExOh(str)
   # code goes here
 
   
-  return str.scan(/["o"]/).count == str.scan(/["x"]/).count
-         
-end
+  return str.scan(/["o"]/).count == str.scan(/["x"]/).count     #.scan(/[]/) => 배열중에 []안에 지정한 캐릭터가 있으면 카운트
+                                                                # 각각 o 와 x 를 세어서 같으면 true 호출 ! 
+end                                                             # .scan 만 알면 어렵지 않아염 
    
 # keep this function call here 
 # to see how to enter arguments in Ruby scroll down   

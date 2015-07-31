@@ -1,7 +1,7 @@
 def FirstReverse(str)
 
   # code goes here
-  return str.reverse
+  return str.reverse    # 1번문제는 i am doo2님 강의로 쉽게쉽게 ^_<
          
 end
    

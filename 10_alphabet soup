@@ -2,7 +2,7 @@ def AlphabetSoup(str)
 
   # code goes here
   
-  str = str.split(//).sort.join
+  str = str.split(//).sort.join     #str을 1.split: 음절하나로 나누고, 2.sort: 정렬하고, 3.join: 다시합친다 !!!!
   return str 
          
 end

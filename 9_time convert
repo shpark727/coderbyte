@@ -3,7 +3,7 @@ def TimeConvert(num)
   # code goes here
   min = num/60
   sec = num%60
-  ans = min.to_s+":"+sec.to_s
+  ans = min.to_s+":"+sec.to_s      # 숫자를 스트링으로 바꿔야 출력이 되염! 그니까 숫자.to_s꼭 하시길 ㅎ
   return ans
          
 end

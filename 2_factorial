@@ -2,7 +2,7 @@ def FirstFactorial(num)
 
   # code goes here
   total = 1
-  while(num>0)
+  while(num>0)           #입력받은 num값을 1씩 줄여가면서 1이 될때까지 계속계속계속 곱함. 
     total=total*num
     num -= 1
   end

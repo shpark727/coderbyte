@@ -1,9 +1,9 @@
 def VowelCount(str)
 
   # code goes here
-  ans = str.scan(/[AEIOUaeiou]/).count
-   
-  return ans
+  ans = str.scan(/[AEIOUaeiou]/).count   # scan(/[AEIOUaeiou]/) => str 배열중에 []안에 지정한 문자가 포함되어있으면..... ? 
+                                         # .count => 요걸로 카운트 해서 ans변수에 넣는닷 !!!!!!!! 
+  return ans                            # 참고로 .count대신 .size 해도 결과는 같습니당 ㅎ 둘의 차이는 저도잘..ㅠ 아시는분 ? 
          
 end
    

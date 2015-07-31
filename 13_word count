@@ -1,8 +1,8 @@
 def WordCount(str)
 
   # code goes here
-  ans = str.split(" ").count
-  return ans
+  ans = str.split(" ").count    # .split(" ") => 띄어쓰기 단위로 잘라서
+  return ans                    # .count => 세어준다!!! 참고로 .size 해도 똑같은 결과가 나오네욧 
          
 end
    

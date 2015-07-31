@@ -1,0 +1,42 @@
+def PowersofTwo(num)
+
+  # code goes here
+  flag = true               #출력 변수 
+  
+  while num >1 do         #루프 조건 
+    if num%2 ==1        # 홀수일때 => false
+      flag = false
+      return flag
+    elsif 1 == num/2        # num이 2일때 => true
+      flag = true
+      return flag
+    else
+      num = num/2         # 짝수일때 => num을 2로 나눔 !!
+    end
+  end
+  
+  return flag
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+PowersofTwo(STDIN.gets)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
